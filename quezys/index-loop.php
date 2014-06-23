@@ -12,11 +12,6 @@
     </a></div>
     <div class="top-data">
         <h3 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-        <div>
-            <span class="like_count"><?php echo get_sns_count(sns_api('facebook'), get_the_permalink()); ?> likes</span>
-            <span class="tweet_count"><?php echo get_sns_count(sns_api('twitter'), get_the_permalink()); ?> tweets</span>
-            <span class="hatena_count"><?php echo get_sns_count(sns_api('hatena'), get_the_permalink()); ?> users</span>
-        </div>
         <?php if(!is_mobile()) : ?>
         <?php get_template_part('entry', 'date'); ?>
         <div class="top-entry-post">
