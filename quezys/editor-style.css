@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+body.mce-content-body,
+body.mceContentBody {
+    font-family: "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+    font-size: 100% !important;
+    line-height: 1;
+}
+
+.editor-area {
+    max-width: 664px;
+    width: 100%;
+    padding: 0 18px;
+}
+.editor-area h2 {
+    clear: both;
+    margin-bottom: 16px;
+    margin-left: -30px;
+    padding: 12px 24px;
+    font-size: 130%;
+    color: #FFF;
+    background: #38aa88;
+}
+.editor-area h3, .editor-area h4, .editor-area h5, .editor-area h6 {
+    clear: both;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    padding: 8px 8px 8px 32px;
+    font-weight: bold;
+    font-size: 120%;
+    background: url(./images/side-normal-icon.png) no-repeat left 3px;
+    border-bottom: 2px dashed #666;
+}
+.editor-area p {
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+.editor-area blockquote {
+    margin: 64px 0 24px -46px;
+    padding: 64px 24px 16px 48px;
+    line-height: 1.4;
+    background: #f3f3f3 url(../images/quote.png) no-repeat 12px 6px;
+    -webkit-box-shadow: 4px 4px 0px -1px #ddd;
+            box-shadow: 4px 4px 0px -1px #ddd;
+}
+.editor-area blockquote h2 {
+    clear: both;
+    margin-left: -48px;
+    margin-right: -40px;
+    margin-bottom: 24px;
+    padding: 14px 24px 8px 42px;
+    font-size: 140%;
+    font-weight: bold;
+    color: #FFF;
+    background: #38aa88;
+    -webkit-box-shadow: 4px 4px 0 -1px #188a68;
+            box-shadow: 4px 4px 0 -1px #188a68;
+}
+.editor-area blockquote h3, .editor-area blockquote h4,.editor-area blockquote h5,.editor-area blockquote h6 {
+    clear: both;
+    padding: 4px 8px 2px 32px;
+}
+.editor-area strong {
+    font-weight: bold;
+}
+.editor-area em {
+    font-family: sans-serif;
+    font-style: italic;
+}
+.editor-area ul, .editor-area ol {
+    margin: 24px 16px;
+}
+.editor-area li {
+    margin-left: 14px;
+    line-height: 1.4;
+}
+.editor-area ol {
+    counter-reset: counter 0;
+}
+.editor-area ol li {
+    position: relative;
+    list-style-type: none;
+    margin: 10px 16px;
+}
+.editor-area ol li:before {
+    counter-increment: counter;
+    content: counter(counter) "";
+    position: absolute;
+    bottom: 0px;
+    left: -38px;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    line-height: 28px;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFF;
+    text-align: center;
+    background: #38aa88;
+    -webkit-border-radius: 100%;
+            border-radius: 100%;
+    -webkit-box-shadow: 1px 1px 0 1px #188a68;
+            box-shadow: 1px 1px 0 1px #188a68;
+}
+.editor-area hr {
+    width: 100%;
+    margin: 64px 0;
+}
+.editor-area img {
+    max-width: 100%;
+    height: auto;
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(32,32,32,0.2);
+            box-shadow: 1px 1px 1px 0px rgba(32,32,32,0.2);
+}
+
+/* WPクラス */
+.categories {}
+.cat-item {}
+.current-cat {}
+.current-cat-parent {}
+.children {}
+.pagenav {}
+.page_item {}
+.current_page_item {}
+.current_page_parent {}
+.current_page_ancestor {}
+.widget {}
+.widget_text {}
+.blogroll {}
+.linkcat {}
+
+/* キャプション付き */
+.aligncenter,
+div.aligncenter { margin: auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+.wp-caption {
+    margin: 12px;
+    padding: 12px;
+    background: #f7f7f7;
+}
+.wp-caption img {}
+.wp-caption p.wp-caption-text {
+    margin-bottom: 0;
+    padding: 10px 8px 2px;
+    line-height: 1.4;
+    text-align: center;
+}

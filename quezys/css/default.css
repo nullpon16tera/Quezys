@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+	-ms-word-break: break-all;
+	    word-break: break-all;
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+nav ul {
+	list-style:none;
+}
+blockquote, q {
+	quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:'';
+	content:none;
+}
+a {
+	margin:0;
+	padding:0;
+	vertical-align:baseline;
+	background:transparent;
+}
+ins {
+	background-color:#ff9;
+	color:#000;
+	text-decoration:none;
+}
+mark {
+	background-color:#ff9;
+	color:#000; 
+	font-style:italic;
+	font-weight:bold;
+}
+del { text-decoration: line-through; }
+abbr[title], dfn[title] {
+	border-bottom:1px dotted;
+	cursor:help;
+}
+hr {
+	display: block;
+	width: 96%;
+	height: 0;
+	margin: 1em auto;
+	padding: 0;
+	border: 0;
+	border-top: 1px solid #cccccc;
+}
+input, select {
+	vertical-align:middle;
+}
+
+/* 初期設定 */
+body {
+	height: 100%;
+	line-height: 1;
+	/*font-family: sans-serif;*/
+	font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	/*font-family: "ＭＳ ゴシック", "MS Gothic", "Osaka－等幅", Osaka-mono, monospace;*/
+	/*font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;*/
+	font-size: 100%;
+	color: #595757;
+	background: #f0f0f0;
+	-webkit-text-size-adjust: 100%;
+}
+p,pre,blockquote,address,em,strong,a {
+	font-weight: normal;
+	font-style: normal;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size: 120%;
+}
+p {
+	line-height: 1.4;
+	margin-bottom: 8px;
+}
+pre { font-size: 14px; }
+img {
+	float: none;
+	vertical-align: bottom;
+	border: none;
+}
+
+/* テーブル初期化 */
+table {
+	table-layout: auto;
+	empty-cells: hide;
+	caption-side: top;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+th {
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	background: #9cf;
+}
+td {
+	text-align: left;
+	vertical-align: middle;
+}
+th,td {
+	padding: 6px;
+	border: 1px solid #ccc;
+}
+.table {
+	display: table;
+	border-collapse: collapse;
+}
+.table dl, .table ul {
+	display: table-row;
+}
+.table dl dt, .table dl dd,
+.table ul li {
+	display: table-cell;
+	padding: 6px;
+	border: 1px solid #ccc;
+}
+
+/* リンクタグ初期設定 */
+a { color: #354B70; text-decoration: none; }
+a:hover { color: #595857; text-decoration: underline; }	/* マウスオーバー時のリンク */
+a:link { color: #354Ba0; }	/* 未訪問のリンク */
+a:visited { color: #696778; }	/* 訪問済みのリンク */
+a:active { color: #593728; }	/* アクティブ中のリンク */
+
+
+/* 背景ポジション */
+.bg-center { background-position: center center !important; }
+.bg-lc { background-position: left center !important; }
+.bg-lt { background-position: left top !important; }
+.bg-lb { background-position: left bottom !important; }
+.bg-rc { background-position: right center !important; }
+.bg-rt { background-position: right top !important; }
+.bg-rb { background-position: right bottom !important; }
+
+/* 廻り込み＆テキスト寄せクラス */
+.fl { float: left; }
+.fr { float: right; }
+.fc { margin: auto; }
+.tr { text-align: right; }
+.tl { text-align: left; }
+.tc { text-align: center; }
+
+/* 廻り込み解除 */
+.cf:after {
+	content: ".";
+	display: block;
+	clear: both;
+}
+.cf { zoom: 1; }
